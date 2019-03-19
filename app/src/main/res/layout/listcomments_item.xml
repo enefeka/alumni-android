@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:background="#D7F0F2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/comment_profile_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/administrador"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="0.5dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/comment_time_posted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:text="3 d"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="307dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/comment_time_posted"
+            android:layout_alignParentTop="true">
+
+
+            <Button
+                android:id="@+id/comment_username"
+
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:text="juanma"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="212dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/comment_username"
+                android:text="this is a comment"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/deleteCommentBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_black_x" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

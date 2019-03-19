@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PanelFragments.Notes_Fragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primero"
+        android:textStyle="bold"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="175dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="55dp"
+        android:text="Segundo"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:text="1EV"
+        android:id="@+id/onebtn"
+        android:background="@color/colordarkGrey"
+        android:layout_marginLeft="100dp"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:text="2EV"
+        android:id="@+id/btnev"
+        android:background="@color/grey"
+        android:layout_marginLeft="150dp"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:text="3EV"
+        android:background="@color/grey"
+        android:layout_marginLeft="200dp"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:id="@+id/listaNotas">
+
+    </ListView>
+
+
+</FrameLayout>

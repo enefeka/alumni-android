@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activities.Register_Activity">
+
+    <ImageView
+        android:id="@+id/imageEventype"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/REGISTER"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:layout_alignParentBottom="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="85dp"
+                android:text="Email"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/emailTxt"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:hint="........"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="Password"
+                android:layout_marginRight="65dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:hint="..........."
+                android:textColorHint="#fff"
+                android:inputType="textPassword"
+                android:textColor="#fff"
+                android:layout_width="220dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="Confirm Password"
+                android:textSize="20dp"
+                android:layout_marginRight="27dp"
+                android:textColor="#fff"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/repeatPasswordTxt"
+                android:hint="..........."
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:layout_width="220dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:text="Register"
+                android:background="@color/white"
+                android:textColor="@color/colorPrimary"
+                android:onClick="register" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

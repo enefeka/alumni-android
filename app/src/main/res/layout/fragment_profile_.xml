@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D7F0F2"
+    tools:context=".Fragments.Profile_Fragment"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center|top"
+        android:descendantFocusability="blocksDescendants"
+        android:src="@drawable/userplace"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="0.5dp"
+
+
+        android:layout_marginTop="30dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/editProfileBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="313dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorPrimary"
+        android:elevation="15dp">
+
+        <TextView
+            android:id="@+id/studentname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Nombre Alumno"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentname"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="User Name"
+            android:textColor="#ffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/studentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_below="@+id/username"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="10dp"
+            android:text="Descripcion breve del usuario is simply dummy text of the printing and typesetting industry."
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/studentPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentDescription"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:text="667123456"
+            android:textColor="#ffff"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/studentPhone"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="33dp"
+            android:src="@android:drawable/ic_menu_call" />
+
+
+        <TextView
+            android:id="@+id/studentmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentPhone"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:text="correodelcev@cev.com"
+            android:textColor="#ffff"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/studentdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignBottom="@+id/studentmail"
+            android:layout_alignLeft="@+id/imageView4"
+            android:src="@android:drawable/ic_dialog_email" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="240dp">
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/cerrarsesion" />
+    </RelativeLayout>
+
+
+</FrameLayout>

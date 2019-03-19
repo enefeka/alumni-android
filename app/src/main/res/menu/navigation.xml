@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/iconoeventos"
+        android:title="Events" />
+
+    <item
+        android:id="@+id/navigation_panel"
+        android:icon="@drawable/panelxhdpi"
+        android:title="Panel" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/usuarionaranja"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navigation_users"
+        android:icon="@drawable/usuarioxxhdpi"
+        android:title="Friends" />
+
+</menu>

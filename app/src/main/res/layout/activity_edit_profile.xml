@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7F0F2"
+    tools:context=".Activities.EditProfileActivity">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edit_profile_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="30dp"
+        android:descendantFocusability="blocksDescendants"
+        android:src="@drawable/userplace"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="0.5dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/edit_profile_image"
+        android:layout_alignTop="@+id/edit_profile_image"
+        android:background="@drawable/editphoto"
+        android:onClick="btnClick"
+        android:elevation="10dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="300dp"
+        android:layout_height="340dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="118dp"
+        android:background="@color/colorPrimary"
+        android:elevation="15dp"
+        android:padding="20dp">
+
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="New name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/nameText"
+            android:layout_marginTop="1dp"
+            android:hint="New password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/phoneText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/passwordText"
+            android:layout_marginTop="1dp"
+            android:hint="New phone"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/phoneText"
+            android:layout_marginTop="1dp"
+            android:hint="New Email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/emailText"
+            android:layout_marginTop="1dp"
+            android:hint="New description"
+            android:textColor="@color/white"
+
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+        <Switch
+            android:id="@+id/switchDescription"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/descriptionText"
+            android:layout_marginTop="40dp"
+            android:text="Allow location"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Switch
+            android:id="@+id/switchPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/switchDescription"
+            android:layout_marginTop="1dp"
+            android:text="Allow phone number"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="updateUser"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

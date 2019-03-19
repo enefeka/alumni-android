@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Fragments.CreateEventsFragments.EventsFragment5">
+
+
+    <Button
+        android:layout_gravity="top|right"
+        android:gravity="center|top"
+        android:id="@+id/exitBtn2"
+        android:layout_width="30dp"
+        android:background="@drawable/cerrar"
+        android:layout_height="30dp" />
+
+
+    <ImageView
+        android:id="@+id/imageEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/mundo"
+        android:contentDescription="@string/todo" />
+
+
+
+    <Button
+        android:id="@+id/exitBtn4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="380dp"
+        android:background="@drawable/cerrar"
+        />
+
+
+    <TextView
+        android:id="@+id/descriptionEvent"
+        android:layout_width="316dp"
+        android:layout_gravity="center|top"
+        android:layout_height="55dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="80dp"
+        android:text="Por ultimo ¿Quieres añadir un sitio Web?"
+        android:textAlignment="center"
+        android:textColor="#009EAD"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="190dp"
+        android:hint="TextHere..."
+        android:layout_height="50dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="350dp"
+        />
+
+
+    <Button
+        android:id="@+id/botonCrearEvento"
+        android:layout_marginTop="480dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center|top"
+        android:layout_height="wrap_content"
+        android:background="#009EAD"
+        android:text="Crear Evento"
+        android:textAllCaps="false"
+        android:textColor="#ffff" />
+
+
+</FrameLayout>

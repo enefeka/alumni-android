@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7F0F2"
+    tools:context=".Fragments.PanelFragments.Asistance_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:gravity="center"
+        android:layout_height="500dp">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/idPieChart"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="900dp">
+        </com.github.mikephil.charting.charts.PieChart>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:background="#1BA856"
+            android:gravity="center"
+            android:text="SI"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:background="@color/darkRed"
+            android:gravity="center"
+            android:text="NO"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="50dp"
+            android:background="#FF801A"
+            android:gravity="center"
+            android:text="TARDE"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
